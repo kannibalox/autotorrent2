@@ -55,6 +55,15 @@ If your torrent data is located in /mnt/data outside docker then you should map 
 
 Personally I recommend mounting your data source as read-only because bittorrent clients are write-happy that might corrupt your data.
 
+Download the docker build: https://github.com/kannibalox/autotorrent2/tree/dockerfile
+Extract the files (if not extracted).
+```
+cd autotorrent2-dockerfile; docker build -t autotorrent2:latest .
+```
+
+The image "autotorrent2:latest" should then be usable to run or include in a docker-compose file.
+
+
 ## Todo
 
 Assortment of stuff that is planned.
